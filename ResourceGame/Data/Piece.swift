@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Piece: Equatable, Hashable {
+class Piece: ObservableObject,Equatable, Hashable {
     static func == (lhs: Piece, rhs: Piece) -> Bool {
         if lhs.direction != rhs.direction {
             return false

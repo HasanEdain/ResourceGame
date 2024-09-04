@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PieceView: View {
-    @State var piece: Piece
+    @StateObject var piece: Piece
 
     var body: some View {
         ZStack {

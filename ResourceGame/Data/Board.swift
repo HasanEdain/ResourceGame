@@ -16,9 +16,21 @@ class Board:ObservableObject {
     }
 
     func selectSquare(x: Int, y:Int) {
+        deselectAllSquares()
         let location: BoardLocation = boardLocations[y][x]
         print("\(#function) \(x) \(y)")
         location.square.selected = true
+    }
+
+    func deselectAllSquares() {
+        let boardWidth = 7
+        let boardHeight = 7
+
+        for i in 0...boardWidth {
+            for j in 0...boardHeight {
+                boardLocations[j][i].square.selected = false
+            }
+        }
     }
 
     static func simpleDiagonal() -> Board {

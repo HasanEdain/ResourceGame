@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct SquareView: View {
-    @State var square: BoardSquare
+    @StateObject var square: BoardSquare
 
     var body: some View {
         Rectangle()
             .fill(square.type.color)
-            .strokeBorder(borderColor, lineWidth: 2.0)
+            .strokeBorder(borderColor, lineWidth: 3.0)
             .aspectRatio(contentMode: .fit)
     }
 
@@ -32,7 +32,7 @@ struct SquareView: View {
     let blueStart: SquareView = SquareView(square: BoardSquare(type: .blueStart, selected: true))
     let money: SquareView = SquareView(square: BoardSquare(type: .money))
     let food: SquareView = SquareView(square: BoardSquare(type: .food))
-    let water: SquareView = SquareView(square: BoardSquare(type: .water))
+    let water: SquareView = SquareView(square: BoardSquare(type: .water, selected: true))
 
     let vstack = VStack() {
         greenStart
