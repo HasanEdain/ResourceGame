@@ -32,8 +32,8 @@ struct BoardView: View {
 
     func handleTap(location: CGPoint) {
 //        print("\(location)")
-        let xSquare = Int((location.x/52.0).rounded(.up))
-        let ySquare = Int((location.y/52.0).rounded(.up))
+        let xSquare = Int((location.x/52.0).rounded(.up)) - 1
+        let ySquare = Int((location.y/52.0).rounded(.up)) - 1
 //        print("X: \(xSquare), Y:\(ySquare)")
         board.selectSquare(x: xSquare, y: ySquare)
     }
