@@ -17,9 +17,8 @@ class Board:ObservableObject {
 
     func selectSquare(x: Int, y:Int) {
         deselectAllSquares()
-        let location: BoardLocation = boardLocations[y][x]
+        boardLocations[y][x].square.selected = true
         print("\(#function) \(x) \(y)")
-        location.square.selected = true
     }
 
     func deselectAllSquares() {
