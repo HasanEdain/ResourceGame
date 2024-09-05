@@ -118,8 +118,10 @@
 		FE2F29112C879AD200C9BF43 /* ResourceGame */ = {
 			isa = PBXGroup;
 			children = (
-				FE2F294B2C87A22A00C9BF43 /* View */,
-				FE2F29462C879D7900C9BF43 /* Data */,
+				FE50EF762C892E60008E40CE /* PlayerView */,
+				FE50EF752C892E55008E40CE /* PlayerData */,
+				FE2F294B2C87A22A00C9BF43 /* BoardView */,
+				FE2F29462C879D7900C9BF43 /* BoardData */,
 				FE2F29122C879AD200C9BF43 /* ResourceGameApp.swift */,
 				FE2F29142C879AD200C9BF43 /* ContentView.swift */,
 				FE2F29162C879AD200C9BF43 /* Item.swift */,
@@ -154,7 +156,7 @@
 			path = ResourceGameUITests;
 			sourceTree = "<group>";
 		};
-		FE2F29462C879D7900C9BF43 /* Data */ = {
+		FE2F29462C879D7900C9BF43 /* BoardData */ = {
 			isa = PBXGroup;
 			children = (
 				FE2F293E2C879B8000C9BF43 /* Piece.swift */,
@@ -166,17 +168,31 @@
 				FE2F29522C87B6AD00C9BF43 /* BoardLocation.swift */,
 				FE0733A12C88172D000195DE /* BoardSquare.swift */,
 			);
-			path = Data;
+			path = BoardData;
 			sourceTree = "<group>";
 		};
-		FE2F294B2C87A22A00C9BF43 /* View */ = {
+		FE2F294B2C87A22A00C9BF43 /* BoardView */ = {
 			isa = PBXGroup;
 			children = (
 				FE2F294C2C87A24500C9BF43 /* PieceView.swift */,
 				FE2F294E2C87A6F600C9BF43 /* SquareView.swift */,
 				FE2F29502C87A95A00C9BF43 /* BoardView.swift */,
 			);
-			path = View;
+			path = BoardView;
+			sourceTree = "<group>";
+		};
+		FE50EF752C892E55008E40CE /* PlayerData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayerData;
+			sourceTree = "<group>";
+		};
+		FE50EF762C892E60008E40CE /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
